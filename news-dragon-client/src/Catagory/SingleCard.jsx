@@ -8,7 +8,7 @@ const SingleCard = ({ cd }) => {
   const { _id, rating, total_view, title, author, image_url, details } = cd;
   return (
     <div className="">
-      <div className="card w-96 glass my-5 p-3">
+      <div className="glass my-5 p-3">
         <div className="navbar bg-base-100">
           <div className="dropdown dropdown-end m-2">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">

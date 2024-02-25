@@ -1,8 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Footer from '../Shared/Footer/Footer';
-import Rightnav from '../SideNav/Rightnav';
 import Header from '../Shared/Header/Header';
+import Rightnav from '../SideNav/Rightnav';
 
 const NewsLayout = () => {
     return (
@@ -13,7 +12,6 @@ const NewsLayout = () => {
             <div className='basis-2/3'><Outlet/></div>
             <Rightnav/>
            </div>
-            <Footer/>
         </div>
     </div>
     );

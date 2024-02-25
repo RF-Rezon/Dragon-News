@@ -8,14 +8,14 @@ import pic3 from "../../assets/3.png";
 const Leftnav = () => {
   const [categories, setCategories] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/categories")
+    fetch("https://dragon-news-server-one-vert.vercel.app/categories")
       .then((res) => res.json())
       .then((data) => setCategories(data))
       .catch((error) => console.log(error));
   }, []);
 
   return (
-    <div>
+    <div className="mr-28">
       <div>
         <p className="p-3 text-lg font-bold text-gray-800">All Category</p>
         <div className="space-y-5">
